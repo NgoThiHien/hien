@@ -1,0 +1,10 @@
+//Tao Hosted Network
+netsh wlan set hostednetwork mode=allow ssid=hien94 key=0983150219
+//Phat Wifi
+netsh wlan start hostednetwork
+//Kiem tra Wifi
+netsh wlan show hostednetwork
+//Tat Wifi
+netsh wlan stop hostednetwork
+//Huy Hosted Network
+netsh wlan set hostednetwork mode=disallow ssid=hien94 key=0983150219
