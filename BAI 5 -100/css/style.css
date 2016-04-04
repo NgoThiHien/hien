@@ -1,0 +1,113 @@
+	*{
+		padding:0;
+		margin:0;
+	}
+	body{
+		width:600px;
+	}
+	nav, h1{
+		margin:10px;
+		float:left;
+		min-width:50%;
+	}
+	li{
+		list-style:none;
+	}
+/* Horizontal navigation bar */
+	.h_nav li{
+		display:inline-block;
+		border-right:1px solid;
+		width:130px;
+		float:left;
+		background:#aaa;
+		height:30px;	
+	}
+	.h_nav a{
+		text-decoration:none;
+		color:#fff;
+		text-align:center;
+		display:block;
+		height:25px;
+		padding-top:5px;
+	}
+	.h_nav a:hover{
+		background-color:green;
+		color:#fff;
+	}
+	.h_nav li:lost-child a{
+		border-right:none;
+	}
+/* Vertical navigation bar */
+	.v_nav li{
+		width:150px;
+		border-bottom:1px solid;
+	}
+	.v_nav a{
+		background:#aaa;
+		padding:5px 10px;
+		text-decoration:none;
+		display:block;
+		height:25px;
+		color:#fff;
+	}
+	.v_nav a:hover{
+		background:green;
+		color:#fff;
+	}
+/* Dropdown navigation bar */	
+	.d_nav li{
+	width:130px;
+	float:left;
+	border-right:1px solid;
+	border-bottom:1px solid;
+	}
+	.d_nav a{
+	background:#aaa;
+	padding:5px 10px;
+	text-decoration:none;
+	display:block;
+	height:25px;
+	color:#fff;
+	text-align:center;
+	}
+	.d_nav a:hover{
+	background:green;
+	color:#fff;	
+	}
+	.d_nav li ul{
+	display:none;
+	}	
+	.d_nav li:hover ul{
+	display:block;
+	border-top:1px solid;
+	}
+/* Vertical Flyout navigation bar */
+	.fly_nav li{
+		list-style:none;
+		position:relative;
+		width:150px;
+		border-bottom:1px solid;
+		border-right:1px solid;
+	}
+	.fly_nav a{
+		text-decoration:none;
+		background:#aaa;
+		display:block;
+		padding:5px 10px;
+		height:25px;
+		color:#fff;
+	}
+	.fly_nav li ul{
+		display:none;
+		left:150px;
+		top:0;
+		position:absolute;
+	}
+	.fly_nav ul li:hover ul{
+		display:block;
+		border-left:1px solid;
+	}
+	.fly_nav a:hover{
+		background:green;
+		color:#fff;
+	}
